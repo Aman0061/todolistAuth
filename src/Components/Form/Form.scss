@@ -1,0 +1,42 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 50px;
+  background: white;
+  border-radius:15px;
+  align-items: center;
+  &__title{
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__label{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  &__field{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 40px;
+    padding: 0 15px;
+  }
+  &__btn{
+    padding: 10px 12px;
+    cursor: pointer;
+    color: white;
+    background: rgba(50, 100, 135, 0.97);
+    border: none;
+    border-radius: 5px;
+  }
+  &__text{
+    margin-top: 25px;
+  }
+  &__link{
+    color: orangered;
+    &:hover{
+      text-decoration: underline orangered;
+      text-underline-offset: 7px;
+    }
+  }
+}
