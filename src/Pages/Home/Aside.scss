@@ -1,0 +1,123 @@
+.aside{
+  width: 200px;
+  height: 100vh;
+  padding: 52px 20px 0;
+  background: aqua;
+  &__all{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 12px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 38px;
+    &:hover{
+      background: white;
+    }
+    &.active{
+      background: #FFFFFF;
+    }
+  }
+  &__leave{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+  }
+  &__item{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 12px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    &-del{
+      display: none;
+      &:hover{
+        transition: 0s all;
+        svg {
+          fill: red;
+        }
+      }
+    }
+    &:hover{
+      background: white;
+      .aside__item-del{
+        display: block;
+      }
+    }
+    &.active{
+      background: #FFFFFF;
+    }
+  }
+  &__color  {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  &__create{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding: 12px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 38px;
+    position: relative;
+    &:hover{
+      background: white;
+    }
+  }
+  &__popup{
+    position: absolute;
+    top: 100%;
+    width: 235px;
+    padding: 18px;
+    background: #FFFFFF;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    &-close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      cursor: pointer;
+    }
+  }
+  &__field{
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    height: 32px;
+    width: 100%;
+    padding: 0 11px;
+  }
+  &__colors{
+    margin: 13px 0;
+    display: flex;
+  column-gap: 5px;
+  }
+  &__col{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__add{
+    width: 100%;
+    background: aqua;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 0;
+    font-family: 'Loto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+  }
+}

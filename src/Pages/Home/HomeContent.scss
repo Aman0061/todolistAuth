@@ -1,0 +1,129 @@
+.content{
+  width: calc(100% - 200px);
+  padding: 56px 69px 0 56px;
+  &__circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    position: relative;
+    cursor: pointer;
+    &:hover, &.active{
+      background: green;
+      border: 2px solid green;
+      &:before{
+        content: url("../../Assets/images/flag.svg");
+        padding: 2px;
+      }
+    }
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 52px;
+  }
+  &__title{
+    font-family: 'Monserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: blue;
+  }
+  &__edit{
+    cursor: pointer;
+    &:hover{
+      svg{
+        fill: black;
+      }
+    }
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+
+  }
+  &__item{
+    max-width: 415px;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    position: relative;
+    &-del{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+  &__bottom{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 21px;
+    &-icon{
+      cursor: pointer;
+    }
+    &-text{
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.15px;
+      color: #787878;
+      cursor: pointer;
+
+    }
+  }
+  &__add{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 16px;
+    &-field{
+      max-width: 415px;
+      height: 38px;
+      background: #FFFFFF;
+      border: 1px solid #c4c4be;
+      border-radius: 4px;
+      padding: 0 14px;
+    }
+    &-btn{
+      padding: 10px 20px;
+      background: #4DD599;
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.15px;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+    }
+    &-action{
+      display: flex;
+      column-gap: 10px;
+    }
+    &-close{
+      background: #c4c4be;
+      border-radius: 4px;
+      padding: 10px 20px ;
+      border: none;
+      cursor: pointer;
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.15px;
+    }
+  }
+}

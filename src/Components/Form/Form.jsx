@@ -12,7 +12,7 @@ const Form = () => {
 
     const navigate = useNavigate();
 
-    const {setUser, user} = useContext(CustomContext)
+    const {setUser, user} = useContext(CustomContext);
 
     const {
         register,
@@ -76,24 +76,25 @@ const Form = () => {
                 }
             </h2>
             {
-                location.pathname === '/register' ? <>            <label className='form__label'>
-                    <input autoComplete= 'off' {...register ('login' , {
-                        required:{
-                            message: 'Поле логин обязателен к заполнению ',
-                            value: true
-                        },
-                        maxLength: {
-                            message: 'Максимальная длинна 10 знаков',
-                            value: 10
-                        },
-                        minLength:{
-                            message:" минимальная длинна 3 символов",
-                            value: 3
-                        }
-                    })} className='form__field' type="text" placeholder='Введите логин'/>
+                location.pathname === '/register' ? <>
 
-                    <span className='form__error'> {errors.login && errors.login.message} </span>
-                </label>
+                    <label className='form__label'>
+                        <input autoComplete= 'off' {...register ('login' , {
+                            required:{
+                                message: 'Поле логин обязателен к заполнению ',
+                                value: true
+                            },
+                            maxLength: {
+                                message: 'Максимальная длинна 10 знаков',
+                                value: 10
+                            },
+                            minLength:{
+                                message:" минимальная длинна 3 символов",
+                                value: 3
+                            }
+                        })} className='form__field' type="text" placeholder='Введите логин'/>
+                         <span className='form__error'> {errors.login && errors.login.message} </span>
+                    </label>
                 </> : ''
             }
 

@@ -20,25 +20,18 @@
       ]
     },
     {
-      "email": "mukanbet@gmail.com",
-      "password": "$2a$10$MUpy3jcH0hIFGx966obzmeWkzYa.0V5fH8WHR5.rkCkzrj1z0ouZS",
-      "login": "aman007",
-      "categories": [],
-      "id": 1124
-    },
-    {
       "email": "mukanbetuuluaman6@gmail.com",
-      "password": "$2a$10$d8zw2LDCOpcX2nGmUMF.feKBeXXGEITkz149pNCszE1Ht060qVVQq",
+      "password": "$2a$10$7c2DkiizJRlbWMyIfJ0ZpO1k6pD.R.Oyr4NprEnV9MZs6YkzE1cyO",
       "login": "aman",
-      "categories": [],
-      "id": 1125
-    },
-    {
-      "email": "aman1@gmail.com",
-      "password": "$2a$10$KWF594MESzQlGcEe2NXN5eivl0x5usDyzx0h5VD5g6GkyWXMTmN2e",
-      "login": "aman",
-      "categories": [],
-      "id": 1126
+      "categories": [
+        {
+          "categoryName": "Alan",
+          "id": "442109d2-1f18-4124-8f34-c09c44f0cd88",
+          "color": "blue",
+          "tasks": []
+        }
+      ],
+      "id": 1124
     }
   ]
 }
